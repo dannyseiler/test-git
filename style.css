@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 200px auto;
+  padding: 15px;
+  background-color: lightgrey;
+  text-align: center;
+  color: white;
+}
+
+.container .box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: rgb(228, 34, 34);
+  border: 3px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+.container .box:hover {
+  background-color: rgb(196, 30, 30);
+}
+
+.container .box:active {
+  transform: scale(1.2);
+}
